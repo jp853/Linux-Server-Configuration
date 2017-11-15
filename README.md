@@ -385,12 +385,3 @@ Change the authorized URI to <http://ec2-34-215-68-109.us-west-2.compute.amazona
 
 Visit <http://34.215.68.109> to view the app
 
-
-
-
-github.com,192.30.253.113 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSA$
-192.30.253.112 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81e$
-[127.0.0.1]:2222 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEC4t2qWbE6LS4Cm7NqtGzvkrJ0KUaTmbxyo0+h6TX4niKhhjUuZDKQCsrjx0fqgSK2wdzt6E/p5rLYrtTmgWAc=
-[127.0.0.1]:2200 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHljD2F2m0NxCaWjwKRSjvCp+A5mhiMA06Ga4gPB7/eHkwzuFwjdRgWy9thg87psBL/zNk9528x/FhARaPYTg64=
-
-

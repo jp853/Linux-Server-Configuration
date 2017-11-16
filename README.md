@@ -44,6 +44,8 @@ Install Finger:
 
     $ sudo apt-get install finger
 
+Source: [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps)
+
 ### 2. Add `grader` and grand `sudo` access
 `$ sudo adduser grader`
 Give 'grader' a user name and set password
@@ -59,6 +61,7 @@ Give 'grader' sudo access:
 Under `root (ALL:ALL)` add the following:
 
     grader (ALL:ALL) ALL
+
 
 ### 3. Configure the key-based authentications for user `grader`
 
@@ -134,10 +137,14 @@ You can now login with:
 
 `$ sudo dpkg-reconfigure tzdata` select `none` then `utc`
 
+Source: [UbuntuTime](https://help.ubuntu.com/community/UbuntuTime)
+
 ### 7. Disable 'root' login
 `$ sudo nano /etc/ssh/sshd_config` set `PermitRootLogin` to `no`.
 
     $ sudo service ssh restart
+
+Source: [AskUbuntu](https://askubuntu.com/questions/27559/how-do-i-disable-remote-ssh-login-as-root-from-a-server)
 
 ### 8. Configure the Uncomplicated Fire Wall (UFW)
 Enable the UFW:
@@ -164,6 +171,8 @@ Check status of UFW:
 
     $ sudo ufw status verbose
 
+Source: [Ubuntu](https://help.ubuntu.com/community/UFW)
+
 ### 8. Install Apache and mod_wsgi
 
     $ sudo apt-get install apache 2
@@ -189,6 +198,8 @@ Check status of UFW:
     $ sudo git config --global user.name "jpingatore"
 
     $ sudo git cinfig --global user.email "jpingatore@gmail.com"
+
+Source: [Github](https://help.github.com/articles/set-up-git/#platform-linux)
 
 ### 10. Clone Item-Catalog App from Github and configure virtual host and wsgi
 
@@ -274,6 +285,8 @@ Insert the following into catalog.wsgi
     from catalog import app as application
     application.secret_key='super_secret'
 
+Source: [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-run-django-with-mod_wsgi-and-apache-with-a-virtualenv-python-environment-on-a-debian-vps)
+
 
 ### 11. Configure Flask Dependencies and the Virtual Env
 
@@ -312,6 +325,8 @@ Install Flask and other python dependencies:
 Install Python PostgreSQL psycopg:
 
     $ sudo apt-get install python-psycopg2
+
+Source: [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 
 ### 12. Install and Setup PostgreSQL
 
@@ -371,13 +386,19 @@ Setup the database:
 
     $ python /var/www/catalog/catalog/database_setup.py
 
+Source: [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
+
 ### 13. Update OAuth authorized JavaScript origins
 
 Change the authorized URI to <http://ec2-34-215-68-109.us-west-2.compute.amazonaws.com> on Google developer dashboard.
 
+Source: Udacity and [Apache](http://httpd.apache.org/docs/2.2/en/vhosts/name-based.html)
+
 ### 14. Install System Monitor
 
     $ sudo apt-get install glances
+
+Source: [Glances](http://glances.readthedocs.io/en/stable/quickstart.html)
 
 ### 15. Restart Apache and Launch App
 
